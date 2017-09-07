@@ -50,9 +50,9 @@ A round imageview
 ### Gradle
 ```
 repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	...
+	maven { url 'https://jitpack.io' }
+}
 ```
 ```
 compile 'com.github.fly7632785:RoundImage:1.0.0'
