@@ -2,7 +2,8 @@
 A round imageview
 
 ### screenshot
-![cool style](https://github.com/fly7632785/RoundImage/raw/master/screenshot/shot1.png)
+
+<img src="https://github.com/fly7632785/RoundImage/raw/master/screenshot/shot1.png" width="40%"/>
 
 ### Use
 | filed                  |meaning                 |
