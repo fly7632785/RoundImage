@@ -11,12 +11,11 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.widget.ImageView;
 
 
-
-public class RoundImageView extends android.support.v7.widget.AppCompatImageView {
+public class RoundImageView extends ImageView {
     private int mInsideBorderThickness ;
     private int mOutsideBorderThickness ;
     private int mBorderOutsideColor ;
@@ -174,13 +173,12 @@ public class RoundImageView extends android.support.v7.widget.AppCompatImageView
     }
 
     @Override
-    public void setImageDrawable(@Nullable Drawable drawable) {
+    public void setImageDrawable(Drawable drawable) {
         if(drawable !=null) {
             setBitmapRes(((BitmapDrawable) drawable).getBitmap());
         }
         super.setImageDrawable(drawable);
     }
-
 
     public int getmInsideBorderThickness() {
         return mInsideBorderThickness;
