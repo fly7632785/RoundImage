@@ -55,7 +55,7 @@ repositories {
 }
 ```
 ```
-compile 'com.github.fly7632785:RoundImage:1.0.0'
+compile 'com.github.fly7632785:RoundImage:1.0.1'
 ```
 
 
