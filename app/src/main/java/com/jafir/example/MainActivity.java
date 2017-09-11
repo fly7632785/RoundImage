@@ -1,11 +1,11 @@
-package com.jafir.roundimage;
+package com.jafir.example;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.jafir.RoundImageView;
+import com.jafir.roundimage.RoundImageView;
 import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {

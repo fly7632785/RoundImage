@@ -1,4 +1,4 @@
-package com.jafir.roundimage;
+package com.jafir.example;
 
 import org.junit.Test;
 

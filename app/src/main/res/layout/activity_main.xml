@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.jafir.roundimage.MainActivity">
+    tools:context="com.jafir.example.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <com.jafir.RoundImageView
+        <com.jafir.roundimage.RoundImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:id="@+id/img1"
@@ -18,13 +18,13 @@
             app:inside_border_width="5dp"
             app:outside_border_color="@color/colorAccent"
             app:outside_border_width="5dp" />
-        <com.jafir.RoundImageView
+        <com.jafir.roundimage.RoundImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:id="@+id/img2"
             app:outside_border_color="@android:color/black"
             app:outside_border_width="5dp" />
-        <com.jafir.RoundImageView
+        <com.jafir.roundimage.RoundImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:id="@+id/img3"

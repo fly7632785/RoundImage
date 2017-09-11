@@ -1,4 +1,4 @@
-package com.jafir.roundimage;
+package com.jafir.example;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
