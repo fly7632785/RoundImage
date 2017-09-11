@@ -15,7 +15,7 @@ A round imageview
 
 
 ```
- <com.jafir.RoundImageView
+ <com.jafir.roundimage.RoundImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:id="@+id/img3"
@@ -55,7 +55,7 @@ repositories {
 }
 ```
 ```
-compile 'com.github.fly7632785:RoundImage:1.0.1'
+compile 'com.github.fly7632785:RoundImage:1.0.2'
 ```
 
 
