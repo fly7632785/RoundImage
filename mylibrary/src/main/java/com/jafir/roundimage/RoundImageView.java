@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.PixelFormat;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
@@ -15,6 +16,9 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 
 
+/**
+ * Created by jafir on 17/9/7.
+ */
 public class RoundImageView extends ImageView {
     private int mInsideBorderThickness ;
     private int mOutsideBorderThickness ;
@@ -175,9 +179,26 @@ public class RoundImageView extends ImageView {
     @Override
     public void setImageDrawable(Drawable drawable) {
         if(drawable !=null) {
-            setBitmapRes(((BitmapDrawable) drawable).getBitmap());
+            if(drawable instanceof BitmapDrawable) {
+                setBitmapRes(((BitmapDrawable) drawable).getBitmap());
+            }else {
+                setImageBitmap(drawableToBitmap(drawable));
+            }
         }
         super.setImageDrawable(drawable);
+    }
+
+    public static Bitmap drawableToBitmap(Drawable drawable) {
+        Bitmap bitmap = Bitmap.createBitmap(
+                drawable.getIntrinsicWidth(),
+                drawable.getIntrinsicHeight(),
+                drawable.getOpacity() != PixelFormat.OPAQUE ? Bitmap.Config.ARGB_8888
+                        : Bitmap.Config.RGB_565);
+        Canvas canvas = new Canvas(bitmap);
+        //canvas.setBitmap(bitmap);
+        drawable.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());
+        drawable.draw(canvas);
+        return bitmap;
     }
 
     public int getmInsideBorderThickness() {
