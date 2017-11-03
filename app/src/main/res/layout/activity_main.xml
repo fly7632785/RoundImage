@@ -32,5 +32,9 @@
             app:inside_border_width="5dp"
             app:outside_border_color="@android:color/black"
             app:outside_border_width="5dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:onClick="change"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -207,6 +207,7 @@ public class RoundImageView extends ImageView {
 
     public void setmInsideBorderThickness(int mInsideBorderThickness) {
         this.mInsideBorderThickness = mInsideBorderThickness;
+        invalidate();
     }
 
     public int getmOutsideBorderThickness() {
@@ -215,6 +216,7 @@ public class RoundImageView extends ImageView {
 
     public void setmOutsideBorderThickness(int mOutsideBorderThickness) {
         this.mOutsideBorderThickness = mOutsideBorderThickness;
+        invalidate();
     }
 
     public int getBorderOutsideColor() {
@@ -223,6 +225,7 @@ public class RoundImageView extends ImageView {
 
     public void setBorderOutsideColor(int borderOutsideColor) {
         this.mBorderOutsideColor = borderOutsideColor;
+        invalidate();
     }
 
     public int getBorderInsideColor() {
@@ -231,5 +234,6 @@ public class RoundImageView extends ImageView {
 
     public void setBorderInsideColor(int borderInsideColor) {
         this.mBorderInsideColor = borderInsideColor;
+        invalidate();
     }
 }
